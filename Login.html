@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Login.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="container">
+      <img src="image.png">
+      <form action="/proses-login" method="post">
+        <h2>Login</h2>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Masukkan password Anda" required>
+        </div>
+
+        <div class="form-group-extra">
+          <a href="LupaPassword.html">Lupa Password?</a>
+        </div>
+
+        <button type="submit"><a href="beranda.html">Login</a></button>
+
+
+        <div class="register-link">
+          <p>Belum punya akun? <a id="daftar"  href="Daftar.html">Daftar</a></p>
+          <a id="lupa">Lupa kata sandi</a>
+        </div>
+      </form>
+      <div style="text-align: center; margin: 20px 0; color: white; font-weight: bold;">ATAU</div>
+
+      <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+      <div id="g_id_onload" data-client_id="MASUKKAN-CLIENT-ID-ANDA-DI-SINI.apps.googleusercontent.com"
+        data-callback="handleCredentialResponse">
+      </div>
+
+      <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
+        data-shape="rectangular" data-logo_alignment="left">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
