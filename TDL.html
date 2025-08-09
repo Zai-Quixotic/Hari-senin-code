@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDL</title>
+    <link rel="stylesheet" href="TDL.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+
+        </div>
+        <div class="header">
+            <h2 id="profile-name">Zenki</h2>
+            <p id="profile-job">Web Developer</p>
+            <button id="edit-button">✏️ Edit</button>
+            <p id="live-time">Memuat waktu...</p>
+        </div>
+
+        <div class="input-area">
+            <textarea id="task-input" placeholder="Tulis detail tugas di sini..."></textarea>
+            <select id="priority-select">
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="add-task-btn">Submit</button>
+        </div>
+
+        <div class="task-lists">
+            <div class="todo-list">
+                <h2>To Do</h2>
+                <ul id="pending-tasks"></ul>
+            </div>
+            <div class="done-list">
+                <h2>Done</h2>
+                <ul id="completed-tasks"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="TDL.js"></script>
+
+</body>
+
+</html>
